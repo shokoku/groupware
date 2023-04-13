@@ -8,6 +8,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-    테스트
+    <div>
+        <h2>Spring framework 인사관리 프로젝트 입니다.</h2>
+        <a href="/member/save">회원가입</a>
+        <a href="/member/login">로그인</a>
+        <a href="/member/">회원목록 조회</a>
+    </div>
 </body>
 </html>
