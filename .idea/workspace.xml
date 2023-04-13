@@ -9,13 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adf46850-cc40-46f9-9b78-46f6ed6a59ae" name="변경" comment="10. 게시판 글 조회 삭제 기능 구현">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/update.jsp" afterDir="false" />
+    <list default="true" id="adf46850-cc40-46f9-9b78-46f6ed6a59ae" name="변경" comment="12. 게시판 페이징 기능 구현징">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/groupware/dto/PageDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/paging.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/groupware/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/groupware/controller/BoardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/groupware/repository/BoardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/groupware/repository/BoardRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/groupware/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/groupware/service/BoardService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/BoardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BoardMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +231,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681370417295</updated>
       <workItem from="1681374820565" duration="4815000" />
-      <workItem from="1681385914343" duration="8342000" />
+      <workItem from="1681385914343" duration="9567000" />
     </task>
     <task id="LOCAL-00001" summary="1. 회원가입 기능 구현">
       <created>1681375267738</created>
@@ -292,7 +296,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681394213981</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="11. 게시판 글 수정 기능 구현">
+      <created>1681394411576</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1681394411576</updated>
+    </task>
+    <task id="LOCAL-00011" summary="12. 게시판 페이징 기능 구현징">
+      <created>1681395166307</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1681395166307</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +352,9 @@
     <MESSAGE value="9. 게시판 글 목록 기능 구현" />
     <MESSAGE value="10. 게시판 글 조회 삭 기능 구현" />
     <MESSAGE value="10. 게시판 글 조회 삭제 기능 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="10. 게시판 글 조회 삭제 기능 구현" />
+    <MESSAGE value="11. 게시판 글 수정 기능 구현" />
+    <MESSAGE value="12. 게시판 페이징 기능 구현징" />
+    <option name="LAST_COMMIT_MESSAGE" value="12. 게시판 페이징 기능 구현징" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

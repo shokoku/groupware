@@ -34,13 +34,13 @@
   </table>
   <button onclick="listFn()">목록</button>
   <button onclick="updateFn()">수정</button>
-  <button onclick="deleteFn()">삭제</button>
+<button onclick="deleteFn()">삭제</button>
 </div>
-
 </body>
 <script>
   const listFn = () => {
-    location.href = "/board/";
+    const page = '${page}';
+    location.href = "/board/paging?page=" + page;
   }
   const updateFn = () => {
     const id = '${board.id}';
