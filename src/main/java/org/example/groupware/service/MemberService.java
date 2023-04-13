@@ -5,6 +5,8 @@ import org.example.groupware.dto.MemberDTO;
 import org.example.groupware.repository.MemberRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class MemberService {
@@ -23,4 +25,7 @@ public class MemberService {
         }
     }
 
+    public List<MemberDTO> findAll() {
+        return memberRepository.findAll();
+    }
 }

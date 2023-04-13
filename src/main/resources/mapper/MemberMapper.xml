@@ -12,5 +12,10 @@
         select * from member_table where memberEmail = #{memberEmail} and memberPassword = #{memberPassword}
     </select>
 
+   <select id="findAll" resultType="member">
+        select * from member_table
+   </select>
+
+
 
 </mapper>
