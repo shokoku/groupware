@@ -8,11 +8,17 @@
 <title>Insert title here</title>
 </head>
 <body>
+    <h2>Spring framework 인사관리 프로젝트 입니다.</h2>
+
     <div>
-        <h2>Spring framework 인사관리 프로젝트 입니다.</h2>
         <a href="/member/save">회원가입</a>
         <a href="/member/login">로그인</a>
         <a href="/member/">회원목록 조회</a>
+    </div>
+    <hr>
+    <div>
+        <a href="/board/save">글작성</a>
+        <a href="/board/">글목록</a>
     </div>
 </body>
 </html>

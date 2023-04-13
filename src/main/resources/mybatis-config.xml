@@ -4,5 +4,6 @@
 <configuration>
     <typeAliases>
         <typeAlias type="org.example.groupware.dto.MemberDTO" alias="member"></typeAlias>
+        <typeAlias type="org.example.groupware.dto.BoardDTO" alias="board"></typeAlias>
     </typeAliases>
 </configuration>
