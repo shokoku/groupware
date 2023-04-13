@@ -87,4 +87,12 @@ public class MemberController {
             return "index";
         }
     }
+
+    @PostMapping("/email-check")
+    public @ResponseBody String emailCheck(@RequestParam("memberEmail") String memberEmail) {
+        System.out.println("memberEmail = " + memberEmail);
+        String checkResult = memberService.emailCheck(memberEmail);
+        return checkResult;
+    }
+
 }

@@ -9,13 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adf46850-cc40-46f9-9b78-46f6ed6a59ae" name="변경" comment="4. 회원 상세 목록 기능 구현">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/update.jsp" afterDir="false" />
+    <list default="true" id="adf46850-cc40-46f9-9b78-46f6ed6a59ae" name="변경" comment="6. 회원 수정 기능 구현">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/groupware/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/groupware/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/groupware/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/groupware/repository/MemberRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/groupware/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/groupware/service/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/MemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/MemberMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/save.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/save.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681379794876</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="6. 회원 수정 기능 구현">
+      <created>1681382170598</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681382170598</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,7 +313,8 @@
     <MESSAGE value="2. 로그인 기능 구현" />
     <MESSAGE value="3. 회원 목록 기능 구현" />
     <MESSAGE value="4. 회원 상세 목록 기능 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="4. 회원 상세 목록 기능 구현" />
+    <MESSAGE value="6. 회원 수정 기능 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="6. 회원 수정 기능 구현" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
