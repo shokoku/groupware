@@ -24,5 +24,12 @@
         delete from member_table where id=#{id}
     </delete>
 
+    <select id="findByMemberEmail" parameterType="String" resultType="member">
+        select * from member_table where memberEmail=#{loginEmail}
+    </select>
+    <update id="update" parameterType="member">
+        update member_table set memberAge=#{memberAge}, memberMobile=#{memberMobile}
+        where id=#{id}
+    </update>
 
 </mapper>
