@@ -3,7 +3,9 @@ package org.example.groupware.service;
 import lombok.RequiredArgsConstructor;
 import org.example.groupware.dto.MemberDTO;
 import org.example.groupware.repository.MemberRepository;
+import org.example.groupware.utility.Validator;
 import org.springframework.stereotype.Service;
+import org.w3c.dom.css.CSSValueList;
 
 import java.util.List;
 
@@ -12,8 +14,26 @@ import java.util.List;
 public class MemberService {
 
     private final MemberRepository memberRepository;
+
     public int save(MemberDTO memberDTO) {
-        return memberRepository.save(memberDTO);
+        Validator v=new Validator();
+        if(!v.EmailValidate(memberDTO.getMemberEmail())){
+            return 0;
+        }
+        else if(!v.PasswordValidate(memberDTO.getMemberPassword())){
+            return 0;
+        }
+        else if(!v.NameValidate(memberDTO.getMemberName())){
+            return 0;
+        }
+        else if(!v.AgeValidate(memberDTO.getMemberAge())){
+            return 0;
+        }
+        else if(!v.PhoneValidate(memberDTO.getMemberMobile())){
+            return 0;
+        }
+        else
+            return memberRepository.save(memberDTO);
     }
 
     public boolean login(MemberDTO memberDTO) {
