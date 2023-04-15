@@ -6,11 +6,12 @@
 </head>
 <body>
 <div>
-    <form action="/member/save" method="post">
+    <form action="/member/save" method="post" onsubmit="return allCheck()" name="memberForm">
         <input type="text" name="memberEmail" placeholder="이메일" id="memberEmail" onblur="emailCheck()">
-        <p id="check-result"></p>
+        <div id="check-result"></div>
         <input type="text" name="memberPassword" placeholder="비밀번호" onkeyup="passwordCheck(this.value)">
-        <p id="check-result2"></p>
+        *10자 이상, 영문 대소문자, 숫자, 특수문자를 사용하세요.
+        <div id="check-result2"></div>
         <input type="text" name="memberName" placeholder="이름" onkeyup="nameCheck(this)">
         <input type="text" name="memberAge" placeholder="나이" onkeyup="ageCheck(this)" maxlength="3">
         <input type="text" name="memberMobile" placeholder="전화번호 '-'없이 입력" onkeyup="mobileCheck(this)" maxlength="11">
@@ -60,7 +61,7 @@
 
     function passwordCheck(password) {
         const checkResult2 = document.getElementById("check-result2");
-        const regex=/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+\-=])\S{8,}$/;
+        const regex=/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+\-=])\S{10,}$/;
         if (password.trim().length != 0) {
             if (regex.test(password)) {
                 console.log("");
@@ -86,6 +87,36 @@
 
     function mobileCheck(mobile) {
         mobile.value = mobile.value.replace(/[^0-9]/g, "");
+    }
+
+    function allCheck() {
+        const memberEmail=document.memberForm.memberEmail.value;
+        const memberPassword=document.memberForm.memberPassword.value;
+        const memberName=document.memberForm.memberName.value;
+        const memberAge=document.memberForm.memberAge.value;
+        const memberMobile=document.memberForm.memberMobile.value;
+        if (memberEmail.trim().length == 0) {
+            alert("이메일을 입력해주세요.");
+            return false;
+        }
+        else if (memberPassword.trim().length == 0) {
+            alert("비밀번호를 입력해주세요.");
+            return false;
+        }
+        else if (memberName.trim().length == 0) {
+            alert("이름을 입력해주세요.");
+            return false;
+        }
+        else if (memberAge.trim().length == 0) {
+            alert("나이를 입력해주세요.");
+            return false;
+        }
+        else if (memberMobile.trim().length < 11) {
+            alert("전화번호를 올바르게 입력해주세요.");
+            return false;
+        }
+        else
+            return true;
     }
 </script>
 </html>
